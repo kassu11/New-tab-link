@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaa linkit uudelle sivulle</title>
+    <style>
+      body {
+        background: rgb(214, 165, 255);
+      }
+
+      button {
+        border: 0px;
+        background: #333;
+        color: white;
+        font-size: 25px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <button onclick="openInNewTab('https://palvelut.geometrix.fi/kuura-dashboard/')">Kuura Dashboard</button>
+    <p>Paina minua :D</p>
+  </body>
+</html>
+
+<script>
+function openInNewTab(url) {
+  var win = window.open(url);
+  win.focus();
+}
+</script>
